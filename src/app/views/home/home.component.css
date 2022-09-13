@@ -1,0 +1,299 @@
+/* CSS DA HOME */
+.jogos {
+    display: none;
+}
+
+
+
+.cabecalho {
+    background-color: #1E1C21;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-grid {
+    /* border:1px solid salmon; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* navbar */
+.menu-principal {
+    width: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* border: 1px solid red; */
+    padding: 20px 15px 20px 15px;
+}
+
+/* ************** MAIN ***************/
+.banner {
+    width: 100%;
+    height: 610px;
+    background-color: #C31616;
+    background-image: url(/assets/images/banner_pilotos.png);
+    background-repeat: no-repeat;
+}
+
+/* caixa da liga inscreva-se */
+.banner-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100% !important;
+    /* border: 1px solid white; */
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 500px;
+    height: 280px;
+    /* border: 1px solid white; */
+}
+
+.banner-info h2 {
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 80px;
+}
+
+.banner-info p {
+    font-family: "Roboto-Medium";
+    text-align: center;
+    font-size: 24px;
+    margin-top: -45px;
+}
+
+.banner-info a {
+    color: white;
+    font-size: 24px;
+    background-color: #C31616;
+    width: 270px;
+    height: 60px;
+
+
+    /* align-self: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-inline: auto;
+
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+/* banner jogos/patrocidados */
+.jogos {
+    background-color: #1E1C21;
+}
+
+.jogos-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+/* produtos */
+.produtos {
+    background-color: #1E1C21;
+    padding: 40px 0;
+}
+
+.produtos h2 {
+    font-size: 1.5rem;
+}
+
+.produtos h2,
+.row {
+    margin: 0;
+    color: white;
+}
+
+/* personalização bootstrap */
+.container {
+    max-width: 1200px;
+}
+
+.btn-danger {
+    background-color: #C31616;
+    border: 1px solid #C31616;
+}
+
+.btn-danger:hover {
+    background-color: #ac1515;
+    border: 1px solid #ac1515;
+}
+
+.card {
+    max-width: 270px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(to bottom, #444444, #1e1c21);
+}
+
+.card .btn {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-top: 10px;
+    text-transform: uppercase !important;
+    border-radius: 10px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 1.3rem;
+}
+
+.card-price {
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 1.5rem;
+}
+
+
+
+
+.info-test {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    color: white;
+    z-index: 100;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Medias */
+
+/* Celular: 0 767px */
+/* Tablets: 768px 991px */
+/* Desktops: >= 992px */
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .menu-bars {
+        display: none;
+
+    }
+}
+
+/**************** Tablets 0 até 991px *****************/
+@media screen and (max-width: 991px) {
+    .cabecalho {
+        padding: 20px 25px;
+
+    }
+
+    .header-flex {
+        height: 60px;
+
+    }
+
+    .banner {
+        background-image: url(/assets/images/banner_lol.png);
+    }
+
+    .banner-box {
+        justify-content: center;
+    }
+
+    .menu-bars {
+        width: 40px;
+        color: white;
+    }
+
+
+    /* 
+        Precisa corrigir/mover para mídia de tablets 
+        pois estamos fazendo "DESKTOP FIRST" 
+        senão o trabalho poderá ser dobrado 
+    ß*/
+    .navbarShow {
+        left: 0 !important;
+    }
+
+    /* navbar */
+    .menu-principal {
+        position: fixed;
+        /* viewport/janela */
+        bottom: 0;
+        left: -80%;
+        z-index: 10;
+
+        width: 80%;
+        height: 100%;
+        background-color: rgba(30, 28, 33, 0.95);
+
+        /* já tem flexbox */
+        flex-direction: column;
+        justify-content: center;
+
+        transition: left 0.5s;
+    }
+
+    .menu-principal a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 80%;
+        height: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+
+        border-left: 3px dotted white;
+    }
+
+
+}
+
+/* celular de 0px até 767px*/
+@media screen and (max-width: 767px) {
+
+    .logotipo {
+        width: 150px;
+    }
+
+    .menu-bars {
+        width: 25px;
+    }
+
+    .menu-principal a {
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+
+}

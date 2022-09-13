@@ -1,0 +1,11 @@
+.rodape {
+    display: flex;
+    justify-content: center;
+    color: grey;
+    padding: 20px;
+
+}
+
+.rodape p {
+    text-align: center;
+}

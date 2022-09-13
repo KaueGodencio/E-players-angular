@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* CSS GENÉRICOS */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "TitilliumWeb-SemiBold";
+    src: url(assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto-Regular";
+}

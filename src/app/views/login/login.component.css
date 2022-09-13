@@ -1,0 +1,116 @@
+.mensagem {
+
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    color: #fa7979;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    background-color: #1E1C21 !important;
+    color: white;
+    padding: 20px;
+}
+
+
+/* mobile first */
+.frm-login {
+    width: 90vw;
+    height: 60vh;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 30px;
+    background-color: #eeeeee;
+    border-radius: 12px;
+}
+
+.frm-login label {
+    display: none;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: #fa7979;
+}
+
+.input-field::placeholder {
+    color: #fa7979;
+}
+
+.input-field:focus {
+    border-bottom: 1px solid #fa7979;
+
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-form {
+    width: 48%;
+    height: 40px;
+    border: 1px solid #fa7979;
+    color: #fa7979;
+    border-radius: 8px;
+
+}
+
+/* sign in */
+.btn-form:first-of-type {
+    border: none;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    .frm-login {
+        width: 60vw;
+        height: 50vh;
+        padding: 50px 40px;
+    }
+
+    .input-field {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        padding: 35px 15px;
+    }
+
+    .btn-form {
+        font-size: 1.3rem;
+        height: 50px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    .frm-login {
+        width: 50vw;
+        max-width: 900px;
+        height: auto;
+        padding: 50px 40px;
+    }
+
+    .btn-form {
+        cursor: pointer;
+    }
+}

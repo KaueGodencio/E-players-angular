@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "email": "eduardo@gmail.com",
+      "password": "$2a$10$M8ZCeQjw.05OES/jUj8UpOajJQqwyXGZFQllo5LYJRLSJEarDbMK2",
+      "nome": "Eduardo",
+      "id": 1
+    }
+  ],
+
+
+  
+  "posts": [
+    {
+      "title": "Hello",
+      "author": "Eduardo Costa",
+      "id": 1
+    },
+    {
+      "title": "Título",
+      "author": "Maria",
+      "id": 2
+    },
+    {
+      "nome": "Eduardo",
+      "email": "eduardo@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,27 @@
+<div class="form-box">
+
+    <h1>Login</h1>
+    <form action="" class="frm-login" (ngSubmit)="logarUsuario()">
+        <label for="email">Usuário</label>
+        <input class="input-field" type="text" id="email" placeholder="Seu Email" required
+            [(ngModel)]="userModel.email" name="email">
+
+        <label for="password">Senha</label>
+        <input class="input-field" type="password" id="password" placeholder="****" required [(ngModel)]="userModel.password"
+            name="password">
+
+        <!-- <input class="input-field" type="text" id="cpf" placeholder="Seu cpf" required autocomplete="none"> -->
+
+        <div class="linha">
+            <button class="btn-form" id="sign-in">Sign in</button>
+            <button class="btn-form" type="button">Sign out</button>
+        </div>
+      
+        <div class="linha">
+            <p class="mensagem">{{mensagem}}</p>
+        </div>
+        
+      
+
+    </form>
+</div>
